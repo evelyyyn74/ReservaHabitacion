@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Reserva</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    input, select {
+      margin-top: 4px;
+      display: block;
+      width: 95%;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Formulario de Reserva</h2>
+  <table>
+  
+    <tr>
+      <th colspan="2">Datos Personales</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+      </td>
+      <td>
+        <label for="apellidoP">Apellido Paterno:</label>
+        <input type="text" id="apellidoP" name="apellidoP">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="apellidoM">Apellido Materno:</label>
+        <input type="text" id="apellidoM" name="apellidoM">
+      </td>
+      <td>
+        <label for="idioma">Idioma:</label>
+        <input type="text" id="idioma" name="idioma">
+      </td>
+    </tr>
+
+    <tr>
+      <th colspan="4">Dirección</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="colonia">Colonia:</label>
+        <input type="text" id="colonia" name="colonia">
+      </td>
+      <td colspan="3">
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero">
+      </td>
+      <td colspan="3">
+        <label for="cp">C.P.:</label>
+        <input type="text" id="cp" name="cp">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+      </td>
+    </tr>
+
+    <tr>
+      <th colspan="4">Datos de la Reserva</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="fechaEntrada">Fecha de entrada:</label>
+        <input type="date" id="fechaEntrada" name="fechaEntrada">
+      </td>
+      <td>
+        <label for="fechaSalida">Fecha de salida:</label>
+        <input type="date" id="fechaSalida" name="fechaSalida">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="tipoHabitacion">Tipo de habitación:</label>
+        <select id="tipoHabitacion" name="tipoHabitacion">
+          <option>Seleccione</option>
+          <option>Sencilla</option>
+          <option>Doble</option>
+        </select>
+      </td>
+      <td>
+        <label for="tipoCama">Tipo de cama:</label>
+        <select id="tipoCama" name="tipoCama">
+          <option>Seleccione</option>
+          <option>Matrimonial</option>
+          <option>Individual</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="numPersonas">Número de personas:</label>
+        <input type="number" min="1" id="numPersonas" name="numPersonas">
+      </td>
+      <td>
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" name="rfc">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
