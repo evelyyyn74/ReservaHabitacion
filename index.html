@@ -27,6 +27,12 @@
       margin-top: 4px;
       display: block;
       width: 95%;
+
+    }
+    #estado, #telefono {
+      display: block;
+      text-align: center;
+      width: 98%;
     }
   </style>
 </head>
@@ -83,7 +89,7 @@
     </tr>
     <tr>
       <td colspan="4">
-        <label for="estado">Estado:</label>
+        <label for="estado" id="estado">Estado:</label>
         <input type="text" id="estado" name="estado">
       </td>
     </tr>
@@ -135,6 +141,10 @@
         <input type="tel" id="telefono" name="telefono">
       </td>
     </tr>
+    <tr>
+      <td colspan="4" style="text-align:center;">
+        <button type="submit">Enviar</button>
+      </td>
   </table>
 </body>
 </html>
